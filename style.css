@@ -67,11 +67,12 @@ footer{
 }
 
 footer > p{
-
+    font-size: 1rem;
 }
 
-footer > i { 
+.icone { 
     font-size: 50px;
+    text-decoration: none;
     margin-top: 0.3rem;
     margin-bottom: 1rem;
 }

@@ -9,7 +9,6 @@ function ativarBotao() {
     const quantidadeContainer = [valorDigitado]
 
    TempoCalculado =  calcularTempo(quantidadeContainer).join(':')
-   console.log(TempoCalculado)
    removerElementoAntigo()
    imprimirNaTela(TempoCalculado)
 
@@ -42,7 +41,7 @@ function adicionarZero(string) {
 function imprimirNaTela(ArrayString){
     
     let novoElemtento = document.createElement("h1")
-    novoElemtento.innerHTML = `O tempo de inspeção foi ${ArrayString} `
+    novoElemtento.innerHTML = `Tempo total de inspeção: ${ArrayString} `
     novoElemtento.classList.add("tempo-de-inspecao")
     container.appendChild(novoElemtento)
     novoElemtento.id = "meuElemento"
