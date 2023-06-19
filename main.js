@@ -1,17 +1,14 @@
 
 const container = document.getElementById('container')
 
-
-
 function ativarBotao() {
 
     const valorDigitado = document.getElementById("valorDigitado").value
     const quantidadeContainer = [valorDigitado]
 
-   TempoCalculado =  calcularTempo(quantidadeContainer).join(':')
-   removerElementoAntigo()
-   imprimirNaTela(TempoCalculado)
-
+    TempoCalculado =  calcularTempo(quantidadeContainer).join(':')
+    removerElementoAntigo()
+    imprimirNaTela(TempoCalculado)
 }
 
 function calcularTempo (x) {
@@ -45,8 +42,6 @@ function imprimirNaTela(ArrayString){
     novoElemtento.classList.add("tempo-de-inspecao")
     container.appendChild(novoElemtento)
     novoElemtento.id = "meuElemento"
-
-   
 }
 
 function removerElementoAntigo(){
