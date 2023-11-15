@@ -1,6 +1,7 @@
 
 const container = document.getElementById('container')
 
+
 function ativarBotao() {
 
     const valorDigitado = document.getElementById("valorDigitado").value
@@ -50,3 +51,11 @@ function removerElementoAntigo(){
         elementoAntigo.remove()
     }
 }
+
+container.addEventListener("keyup", function(event) {
+    // Verifica se a tecla pressionada é Enter (código 13)
+    if (event.keyCode === 13) {
+      // Chama a função quando Enter é pressionado
+      ativarBotao();
+    }
+  });
